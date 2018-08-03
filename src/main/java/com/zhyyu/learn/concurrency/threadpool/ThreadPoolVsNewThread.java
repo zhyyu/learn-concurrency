@@ -77,6 +77,7 @@ public class ThreadPoolVsNewThread {
 		}
 
 		private void doNothingWith(int num) {
+			@SuppressWarnings("unused")
 			long result = 1;
 			
 			for (int i = 0; i < 1000; i++) {
