@@ -28,7 +28,7 @@ public class InterruptTest {
 				e.printStackTrace();
 				
 				/**
-				 * catch InterruptedException 会清清楚中断状态, 重新interrupt 恢复中断状态, 使其他线程可知道该线程被中断过
+				 * catch InterruptedException 中断状态未设置, 手动设置中断状态, 使其他线程可知道该线程被中断过
 				 */
 				Thread.currentThread().interrupt();
 			}

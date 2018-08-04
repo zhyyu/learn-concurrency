@@ -16,6 +16,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 1. 线程池任务完成后线程状态
  * 2. 若工作线程无sleep/wait 操作, 如何响应interrupt
  * @author Administrator
+ * @see ThreadStatusTaksFinishedInThreadPool 
+ * @see HandleInteruptWithoutSleep
  *
  */
 public class FutureGetTimeOutTest {
