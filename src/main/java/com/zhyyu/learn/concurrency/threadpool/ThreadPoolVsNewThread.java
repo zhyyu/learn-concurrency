@@ -8,8 +8,8 @@ import java.util.concurrent.Executors;
  * ThreadPoolVsNewThread
  * <br>
  * OUTPUT:
- * new thread spend mills: 126
-thread pool spend mills: 10
+new thread spend mills: 1531
+thread pool spend mills: 11
 
  * @author zhyyu
  *
@@ -82,8 +82,10 @@ public class ThreadPoolVsNewThread {
 			
 			for (int i = 0; i < 1000; i++) {
 				for (int j = 0; j < 1000; j++) {
-					num++;
-					result += num * num;
+					for (int k = 0; k < 1000; k++) {
+						num++;
+						result += num * num;
+					}
 				}
 			}
 			
