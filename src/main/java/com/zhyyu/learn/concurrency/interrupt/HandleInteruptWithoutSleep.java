@@ -2,6 +2,12 @@ package com.zhyyu.learn.concurrency.interrupt;
 
 /**
  * 测试不使用sleep 等方法捕获interrupt
+ * <br>
+ * 1. Thread.sleep
+ * 2. Object.wait
+ * 3. Thread.interrupted 均会清除中断状态
+ * =====================
+ * 4. thread.isInterrupted 不会清除中断状态
  * @author zhyyu
  *
  */
