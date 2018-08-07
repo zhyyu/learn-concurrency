@@ -11,7 +11,7 @@ import java.util.concurrent.Future;
 import org.apache.commons.lang3.RandomUtils;
 
 /**
- * 测试executorService.invokeAll, 返回futureList 和 callableList 顺序一致
+ * 测试executorService.invokeAll, 返回futureList 和 callableList 顺序一致, invokeAll 为阻塞方法, 等到所有任务完成
  * <br>
  * Returns:a list of Futures representing the tasks, in the same sequential order as produced by the iterator for the given task list, each of which has completed
  * @author zhyyu
@@ -28,7 +28,10 @@ public class ExecutorServiceInvokeAllTest {
 		}
 		
 		System.out.println("try invoke all task");
+		long startMillis = System.currentTimeMillis();
 		List<Future<Integer>> futureList = executorService.invokeAll(callableList);
+		long endMillis = System.currentTimeMillis();
+		System.out.println("invoke all spent mills: " + (endMillis - startMillis));
 		
 		System.out.println("task result:");
 		for (Future<Integer> future : futureList) {
@@ -46,7 +49,7 @@ public class ExecutorServiceInvokeAllTest {
 
 		@Override
 		public Integer call() throws Exception {
-			Thread.sleep(RandomUtils.nextInt(0, 100));
+			Thread.sleep(i * 100);
 			return i;
 		}
 		
