@@ -19,8 +19,8 @@ import java.util.concurrent.TimeUnit;
  * 2. 设置maxPoolSize = corePoolSize,  超过 poolSize 线程不执行
  *
  * 3. coreSize = 0 maxSize > 0, 提交多于 SynchronousQueue 任务, RejectedExecutionException异常
- * 4. coreSize = 0 maxSize > 0, 使用 SynchronousQueue, 提交多少任务就有多少个工作线程
- * 5. coreSize = 0 maxSize > 0, 使用LinkedBlockingQueue, 仅有一个工作线程工作
+ * 4. coreSize = 0 maxSize > 0, 使用 SynchronousQueue, 提交多少任务就有多少个工作线程 (没有线程WAITING, 工作线程数小于线程池maxSize, Executor 将创建一个新线程)
+ * 5. coreSize = 0 maxSize > 0, 使用LinkedBlockingQueue, 仅有一个工作线程工作  (没有线程WAITING, 工作线程数小于线程池maxSize, Executor 将等待工作线程空闲后将LinkedQueue 中任务添加)
  * 6. coreSize = 0 maxSize > 0, 到达keepAliveTime, 清理以完成任务(空闲)线程
  */
 public class PoolCoreMaxSizeAndKeepAliveTimeTest {
