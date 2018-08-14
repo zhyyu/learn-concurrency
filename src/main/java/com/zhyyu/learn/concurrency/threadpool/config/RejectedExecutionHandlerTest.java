@@ -44,7 +44,7 @@ try submit: 1
 try submit: 2
 		 */
 		
-		/* ====================================== caller runs policy ====================================== */
+		/* ====================================== DiscardPolicy ====================================== */
 		/*ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 1, 0, TimeUnit.MILLISECONDS, new ArrayBlockingQueue<>(1), new ThreadPoolExecutor.DiscardPolicy());
 		for (int i = 0; i < 5; i++) {
 			System.out.println("try submit: " + i);
@@ -58,7 +58,7 @@ try submit: 3
 try submit: 4
 		 */
 		
-		/* ====================================== caller runs policy ====================================== */
+		/* ====================================== DiscardOldestPolicy ====================================== */
 		ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(1, 1, 0, TimeUnit.MILLISECONDS, new ArrayBlockingQueue<>(1), new ThreadPoolExecutor.DiscardOldestPolicy());
 		for (int i = 0; i < 5; i++) {
 			System.out.println("try submit: " + i);
