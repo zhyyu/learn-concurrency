@@ -4,6 +4,10 @@ import java.util.concurrent.Semaphore;
 
 /**
  * test Semaphore
+ * <pre>
+ * CON:
+ * 1. semaphore.acquire() 获取信号量, 并将信号量减一, 等待如果没有信号量
+ * 2. semaphore.release() 增加信号量
  * @author Administrator
  *
  */
