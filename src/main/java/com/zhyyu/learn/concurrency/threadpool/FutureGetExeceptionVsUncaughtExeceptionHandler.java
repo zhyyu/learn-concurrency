@@ -75,3 +75,22 @@ public class FutureGetExeceptionVsUncaughtExeceptionHandler {
         }
     }
 }
+
+
+
+
+
+
+//future get ExecutionException: java.util.concurrent.ExecutionException: java.lang.ArithmeticException: / by zero
+//java.util.concurrent.ExecutionException: java.lang.ArithmeticException: / by zero
+//	at java.util.concurrent.FutureTask.report(FutureTask.java:122)
+//	at java.util.concurrent.FutureTask.get(FutureTask.java:192)
+//	at com.zhyyu.learn.concurrency.threadpool.FutureGetExeceptionVsUncaughtExeceptionHandler.main(FutureGetExeceptionVsUncaughtExeceptionHandler.java:30)
+//Caused by: java.lang.ArithmeticException: / by zero
+//	at com.zhyyu.learn.concurrency.threadpool.FutureGetExeceptionVsUncaughtExeceptionHandler$1.call(FutureGetExeceptionVsUncaughtExeceptionHandler.java:24)
+//	at com.zhyyu.learn.concurrency.threadpool.FutureGetExeceptionVsUncaughtExeceptionHandler$1.call(FutureGetExeceptionVsUncaughtExeceptionHandler.java:1)
+//	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+//	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+//	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+//	at java.lang.Thread.run(Thread.java:745)
+
