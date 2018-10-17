@@ -2,6 +2,7 @@ package com.zhyyu.learn.concurrency.threadpool.config;
 
 /**
  * TODO 无法关闭Executors, 任务while(true)
+ * TODO coreSize = 0, 所有任务完成, jvm 退出
  * <pre>
  * 待测试:
  * 1. shutdown
