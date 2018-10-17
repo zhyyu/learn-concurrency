@@ -4,9 +4,12 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
 /**
- * TODO 待测试 LinkedBlockingQueue ArrayBlockingQueue 区别, 读api
+ * LinkedBlockingQueue ArrayBlockingQueue 区别, 读api
  * <pre>
  * 1. 均会阻塞, 到达队列大小
+ * 2. Linked queues typically have higher throughput than array-based queues but less predictable performance in most concurrent applications. 
+ * 
+ * @see CorePoolSizeTest
  * @author zhyyu2016
  *
  */
