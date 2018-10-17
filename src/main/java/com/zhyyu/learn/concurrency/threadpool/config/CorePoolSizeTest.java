@@ -36,8 +36,8 @@ import java.util.concurrent.TimeUnit;
 public class CorePoolSizeTest {
 
 	public static void main(String[] args) throws InterruptedException {
-		//testZeroCoreSizeWithInfiniteTask(new ArrayBlockingQueue<>(5));
-		//testZeroCoreSizeWithInfiniteTask(new LinkedBlockingQueue<>(5));
+		testZeroCoreSizeWithInfiniteTask(new ArrayBlockingQueue<>(5));
+		testZeroCoreSizeWithInfiniteTask(new LinkedBlockingQueue<>(5));
 		/*
 		testZeroCoreSizeWithInfiniteTask: 2
 		testZeroCoreSizeWithInfiniteTask: 2
@@ -53,8 +53,8 @@ public class CorePoolSizeTest {
 		*/
 
 		
-		//testZeroCoreSizeWithFleetingTask(new ArrayBlockingQueue<>(5));
-		//testZeroCoreSizeWithFleetingTask(new LinkedBlockingQueue<>(5));
+		testZeroCoreSizeWithFleetingTask(new ArrayBlockingQueue<>(5));
+		testZeroCoreSizeWithFleetingTask(new LinkedBlockingQueue<>(5));
 		/*
 		testZeroCoreSizeWithFleetingTask: 2
 		testZeroCoreSizeWithFleetingTask: 2
@@ -71,7 +71,7 @@ public class CorePoolSizeTest {
 		
 		//----------------------------------------------------------------------------------------------
 
-		//testZeroCoreSizeWithFleetingTask(new SynchronousQueue<>());
+		testZeroCoreSizeWithFleetingTask(new SynchronousQueue<>());
 		/*
 		testZeroCoreSizeWithFleetingTask: 2
 		testZeroCoreSizeWithFleetingTask: 3
@@ -88,7 +88,7 @@ public class CorePoolSizeTest {
 		
 		//----------------------------------------------------------------------------------------------
 
-		//testNonZeroCoreSizeWithFleetingTask(new ArrayBlockingQueue<>(3));
+		testNonZeroCoreSizeWithFleetingTask(new ArrayBlockingQueue<>(3));
 		/*
 		testNonZeroCoreSizeWithFleetingTask: 2
 		testNonZeroCoreSizeWithFleetingTask: 3
