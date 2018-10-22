@@ -4,7 +4,7 @@ package com.zhyyu.learn.concurrency.wait;
  * 测试nofityAll
  * <pre>
  * 1. nofity 通知监视同一monitor arbitrary wait 线程, 其他线程WAITING 状态
- * 2. nofity 通知监视同一monitor 所有 wait 线程, 只有一个线程可执行, 其余 BLOCKED 状态, RUNNABLE 线程执行完毕后, BLOCKED 线程竞争获取monitor 以执行
+ * 2. notifyAll 通知监视同一monitor 所有 wait 线程, 只有一个线程可执行, 其余 BLOCKED 状态, RUNNABLE 线程执行完毕后, BLOCKED 线程竞争获取monitor 以执行
  * @author zhyyu2016
  *
  */
