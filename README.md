@@ -291,3 +291,11 @@
     - > 初始化安全性将确保, 对于被正确构造的对象, 所有线程都能看到由构造函数为对象各个final 域设置的正确值, 而不管采用何种方式来发布对象
     
     - ![image](http://zhyyu-learn.oss-cn-shenzhen.aliyuncs.com/learn-concurrency/%E5%88%9D%E5%A7%8B%E5%8C%96%E8%BF%87%E7%A8%8B%E7%9A%84%E5%AE%89%E5%85%A8%E6%80%A7.png)
+    
+    
+----------
+
+# 相关资源
+- Java 并发编程实战
+- Java™ Platform, Standard Edition 8 API Specification
+    - https://docs.oracle.com/javase/8/docs/api/
