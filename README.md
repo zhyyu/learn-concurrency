@@ -37,7 +37,7 @@
 ##### 1.8 线程封闭(Thread Confinement)
 > 当某个对象**封闭**在**一个线程**中是, 这种用法将自动实现线程安全性, 即使被封闭的对象本身不是线程安全的.
 - ThreadLocal
-- 动态数据源0
+- 动态数据源
 - MDC
 
 ##### 1.9 安全发布
@@ -237,7 +237,7 @@
     - ![image](http://zhyyu-learn.oss-cn-shenzhen.aliyuncs.com/learn-concurrency/%E8%BF%87%E6%97%A9%E5%94%A4%E9%86%92.png)
 - 通知
     > 每当在等待一个条件时, 一定要确保在条件谓词变为真时, 通过某种方式发出通知
-    
+
     - 若多个条件谓词等待同一条件队列, 则使用nofifyAll 而非notify, 否则容易产生信号丢失问题
 
 ##### 7.4 Condition
@@ -277,7 +277,7 @@
     - ![image](http://zhyyu-learn.oss-cn-shenzhen.aliyuncs.com/learn-concurrency/CountDownLatch8.png)
     - ![image](http://zhyyu-learn.oss-cn-shenzhen.aliyuncs.com/learn-concurrency/CountDownLatch9.png)
 
---- 
+---
 
 ### 8 Java 内存模型
 - 重排序
@@ -289,10 +289,10 @@
     - ![image](http://zhyyu-learn.oss-cn-shenzhen.aliyuncs.com/learn-concurrency/%E5%AE%89%E5%85%A8%E7%9A%84%E5%8F%91%E5%B8%832.png)
 - 初始化过程的安全性
     - > 初始化安全性将确保, 对于被正确构造的对象, 所有线程都能看到由构造函数为对象各个final 域设置的正确值, 而不管采用何种方式来发布对象
-    
+
     - ![image](http://zhyyu-learn.oss-cn-shenzhen.aliyuncs.com/learn-concurrency/%E5%88%9D%E5%A7%8B%E5%8C%96%E8%BF%87%E7%A8%8B%E7%9A%84%E5%AE%89%E5%85%A8%E6%80%A7.png)
-    
-    
+
+
 ----------
 
 # 相关资源
