@@ -37,3 +37,11 @@ public class LockSupportTest {
 	}
 	
 }
+
+
+//"Thread-0" #11 prio=5 os_prio=0 tid=0x0000000019c34800 nid=0x728 waiting on condition [0x000000001a8cf000]
+//		   java.lang.Thread.State: WAITING (parking)
+//		        at sun.misc.Unsafe.park(Native Method)
+//		        at java.util.concurrent.locks.LockSupport.park(LockSupport.java:304)
+//		        at com.zhyyu.learn.concurrency.aqs.LockSupportTest$1.run(LockSupportTest.java:29)
+//		        at java.lang.Thread.run(Thread.java:748)
