@@ -74,3 +74,25 @@ public class WaitMonitorTest {
 	}
 	
 }
+
+
+
+//"Thread-1" #14 prio=5 os_prio=0 tid=0x000000001e54a000 nid=0x63bc in Object.wait() [0x000000001fa1f000]
+//		   java.lang.Thread.State: WAITING (on object monitor)
+//		        at java.lang.Object.wait(Native Method)
+//		        - waiting on <0x000000076b3d0e70> (a com.zhyyu.learn.concurrency.wait.WaitMonitorTest$MyObj)
+//		        at java.lang.Object.wait(Object.java:502)
+//		        at com.zhyyu.learn.concurrency.wait.WaitMonitorTest$MyObj.waitByThisMonitor2(WaitMonitorTest.java:46)
+//		        - locked <0x000000076b3d0e70> (a com.zhyyu.learn.concurrency.wait.WaitMonitorTest$MyObj)
+//		        at com.zhyyu.learn.concurrency.wait.WaitMonitorTest$2.run(WaitMonitorTest.java:25)
+//		        at java.lang.Thread.run(Thread.java:745)
+//
+//"Thread-0" #13 prio=5 os_prio=0 tid=0x000000001e547000 nid=0x561c in Object.wait() [0x000000001eebf000]
+//   java.lang.Thread.State: WAITING (on object monitor)
+//        at java.lang.Object.wait(Native Method)
+//        - waiting on <0x000000076b3d0e70> (a com.zhyyu.learn.concurrency.wait.WaitMonitorTest$MyObj)
+//        at java.lang.Object.wait(Object.java:502)
+//        at com.zhyyu.learn.concurrency.wait.WaitMonitorTest$MyObj.waitByThisMonitor(WaitMonitorTest.java:40)
+//        - locked <0x000000076b3d0e70> (a com.zhyyu.learn.concurrency.wait.WaitMonitorTest$MyObj)
+//        at com.zhyyu.learn.concurrency.wait.WaitMonitorTest$1.run(WaitMonitorTest.java:14)
+//        at java.lang.Thread.run(Thread.java:745)
