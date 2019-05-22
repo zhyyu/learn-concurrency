@@ -4,3 +4,4 @@
 target
 java_pid*
 *dump*
+*.iml
